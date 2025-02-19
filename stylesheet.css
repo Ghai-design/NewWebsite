@@ -1,0 +1,106 @@
+
+@media screen and (max-width:600px)and (min-width:300px) {
+    header 
+    {
+        max-width: 150%; /* لجعل العنصر يمتلك عرض 100% من الشاشة */
+        flex-direction: row; /* لجعل العناصر تظهر بشكل عمودي */
+        text-align: center; /* لتوسيط النص */
+        max-height: 20vh;
+    justify-content: center;/**/
+        background-size: contain;
+        font:size 14px;
+        margin-right: 0%;
+        padding: 0%;
+       
+    }
+    body {
+        font-size: 10px; /* تغيير حجم الخط داخل body */
+    
+    }
+    nav {
+        top: 0; /* لتغيير موضع شريط التنقل */
+    }
+    nav ul li {
+        display: block; /* لجعل العناصر تظهر بشكل عمودي */
+        margin-right: 0; /* إزالة الهامش من اليمين */
+        margin-bottom: 10px; /* إضافة هامش من الأسفل */
+    }
+    main {
+        background-size: contain; /* لتغيير حجم الصورة لتناسب العنصر */
+    }
+}
+
+
+
+header { 
+     max-width: 150%;
+    position:sticky;/* لبقاء شريط التنقل في الأعلى عند التمرير */
+    top:0;           /* لبقاء شريط التنقل في الأعلى عند التمرير */
+    display: flex;      /* لجعل العناصر تظهر بجانب بعضها */
+     align-items: center;/* لتوسيط العناصر بشكل عمودي */
+     background-color: #a5e1ef;/* لتغيير لون الخلفية */
+    /* color: rgb(7, 6, 6);    /* لتغيير لون النص */
+     /*padding: 1em;*
+     /*text-align: center;*/
+     text-shadow: 3px 3px 3px #033b4a;
+     justify-content: space-between;/* لتوزيع العناصر بالتساوي */
+}
+nav {
+   position: sticky;/* لبقاء شريط التنقل في الأعلى عند التمرير */
+    top: 160px;/* لبقاء شريط التنقل في الأعلى عند التمرير */
+    background-color: #333;
+    padding: 10px;/* لإضافة هامش داخلي */
+    overflow: hidden;/* لعرض العناصر بشكل صحيح */
+    direction: rtl;/* يجعل النصوص تبدأ من اليمين */
+  
+}
+
+nav ul {
+    list-style-type: none;/* لإزالة النقاط من القائمة */
+    margin: 0;/* لإزالة الهامش الخارجي */
+    padding: 0;/* لإزالة الهامش الداخلي */
+    overflow: hidden;/* لعرض العناصر بشكل صحيح */
+   
+
+}
+
+nav ul li {
+    display: inline;/* لجعل العناصر تظهر بجانب بعضها */
+    margin-right: 20px;/* لإضافة هامش من اليمين */
+}
+
+nav ul li a {
+    color: white;/*  لتغيير لون النص في الارتباط التشعبي*/
+    text-decoration: none;/* لإزالة التزيين من النص */
+    font-size: 18px;/* لتغيير حجم الخط */
+}
+
+nav ul li a:hover {
+    color: #91b6e7;/* لتغيير لون النص عند تحويل المؤشر إليه */
+}
+
+main {
+    height: 100vh;/* لجعل العنصر يمتلك ارتفاع 100% من الشاشة */   
+         background-image: url('صورة.png');/* لإضافة صورة خلفية */
+    background-size:cover;/* لتغيير حجم الصورة لتناسب العنصر */
+    background-position:center;/* لتحديد مكان الصورة */
+}
+/* نموذج اتصل ببنا تنسيق */
+#form
+{
+
+    padding: 35px;
+     text-align: center;
+      border: 2px solid black; 
+      box-shadow: 10px 10px 5px #888888;
+       background-color: #f1f1f1; 
+       width: 35%;
+        margin: auto; 
+        position: absolute; 
+        top: 50%;
+         left: 50%;
+          transform: translate(-50%, -50%);
+          
+
+}
+

@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
+    <script src='main.js'></script>
+<style>
+   .image {
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+    }
+    .circular-image {
+        border-radius: 50%; /* جعل الحواف دائرية */
+    }
+    .mainbutton{
+        
+background-color: blanchedalmond;
+        border: 4px solid rgb(89, 169, 203);
+        padding: 5px 20px;
+        &:hover {
+            background-color: rgb(151, 157, 160);
+        }
+        border-radius: 200px;
+ 
+    }
+</style>
+    
+ </head>
+ <body>
+
+    
+       
+    <script>
+        function aleart(){
+alert("مرحبا بكم في شركة بيريمبولو للحماية يمكنكم استخدام الازرار لتكبير الخط او الاستماع لنص");
+}
+
+</script>
+    <header>
+        <a href="#main_page.html">
+             <img src="PEREM_POLO-.png" class="circular-image" alt="logo" width="150px" height="auto" style="opacity: 2.0;" title=" شعار الشركة ">
+        </a>
+        <h1 style="text-align: center;">PEREM POLO SECURITY</h1>
+        <a href="#main_page.html">
+            <img src="PEREM_POLO-.png" class="circular-image" alt="logo" width="150px" height="auto" align="right" title=" شعار الشركة ">
+        </a>
+        
+    </header>
+   
+
+
+    <nav>
+       
+
+
+
+        <ul>
+            <li><a href="#main_page.html">الصفحة الرئيسية </a></li>
+            <li><a href="من نحن .html">من نحن</a></li>
+            <li> <a href="الخدمات.html">الخدمات</a></li>
+            <li><a href="المنتجات.html"> المنتجات</a></li>
+
+            <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+        </ul> 
+        
+        <p id="datetime"></p>
+
+                   <script>
+                     function updateDateTime() {
+                     const now = new Date();
+                      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                       const dateTimeString = now.toLocaleDateString('ar-EG', options);
+                      document.getElementById('datetime').textContent = dateTimeString;
+                         }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+            </nav>
+            <div style="text-align:left; margin-top: 5px; margin-bottom: 0px; background-color:#333; position: sticky;top: 210px;" >
+                <button class="mainbutton" style="font-size:18px; opacity:1;" onclick="document.getElementById('mainText').style.fontSize='50px';onmousemove=aleart()">تكبير الخط</button>
+                <button class="mainbutton" style="font-size:18px; opacity:1;" onclick="document.getElementById('mainText').style.fontSize='32px';">تصغير الخط</button>
+                <button class="mainbutton" style="font-size:18px; opacity:1;" onclick="speak()">اقرأ النص</button>
+                <h1>مرحبًا بكم في موقعي!</h1>
+                <p>عدد الزيارات: <span id="visit-count">0</span></p>
+                <script src="counter.js"></script>
+            </body>
+               
+                 
+            </div>
+<main>
+
+    <p  id="mainText" style="text-align:right; padding: 50px; font-size:32px" onmousemove="this.style.fontSize='50px'"  onmouseout="this.style.fontSize='32px'"><b>مرحبا بكم في شركة بيريمبولو للحماية
+        سواء كنت صاحب المنزل، المقاول الحكومي، مؤسسة، أو الأعمال التجارية، يمكننا تخصيص نظام المراقبة الأمنية لتناسب احتياجاتك بسعر الذي يعمل بالنسبة لك</p></b>
+    <h1 style="text-align:right ">نكتب نبذة عن الشركة </h1>
+
+
+    
+    <script>
+        function speak()/*تعريف الدالة */
+        { const speach = new SpeechSynthesisUtterance();/*انشاء كائن من الدالة */
+            const thetext=document.getElementById("mainText").textContent;/*الحصول على النص من العنصر */
+            speach.text=thetext;/*تعيين النص الى الدالة */
+            const SpeechSynthesis=window.speechSynthesis;/*تعريف الدالة */
+            speechSynthesis.speak(speach);/*تحويل النص الى كلام */
+        
+        }
+    </script>
+   </main> </body>
+   <footer>
+
+   <a  href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank"> <img  class=image src="images.png" alt="facebook" ></a>
+
+  <a href="https://www.whatsapp.com/"  target="_blank">  <img  class=image src="WhatsApp_icon.png" alt="whatsapp" ></a>
+   </footer>
+
+ </html> 
